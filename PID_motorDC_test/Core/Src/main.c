@@ -188,7 +188,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_ADC_Start_DMA(&hadc1, &adc_val, 1);
+//	HAL_ADC_Start_DMA(&hadc1, &adc_val, 1);
 
 	HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 	HAL_Delay(100);
@@ -203,10 +203,10 @@ int main(void)
 
 	speed = map(adc_val, 0, 4095, 0, 65535);
 
-	setMotor(-1, 65535, 0);
+	setMotor(-1, 0, 0);
 	HAL_Delay(100);
 
-	ssd1306_TestAll();
+	ssd1306_TestDrawBitmap();
   }
   /* USER CODE END 3 */
 }

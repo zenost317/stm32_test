@@ -7249,6 +7249,7 @@ static HAL_StatusTypeDef I2C_WaitOnFlagUntilTimeout(I2C_HandleTypeDef *hi2c, uin
 /**
   * @brief  This function handles I2C Communication Timeout for Master addressing phase.
   * @param  hi2c Pointer to a I2C_HandleTypeDef structure that contains
+  *
   *         the configuration information for I2C module
   * @param  Flag specifies the I2C flag to check.
   * @param  Timeout Timeout duration
